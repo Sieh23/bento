@@ -3,58 +3,84 @@
     <head>
         <title> Making use of Grids</title>
         <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,500;1,9..40,500&display=swap" rel="stylesheet">
     </head>
     <style>
         .start{
             display:grid;
-            grid-template-columns:50px;
-            column-gap:30px;
-            row-gap:30px;
+            grid: 150px;
+           
+            gap:10px 10px;
+            font-family: "DM Sans", sans-serif;
+            font-weight: 500;
             justify-content:center;
             align-items:center;
+            font-size:18px;
+          
+    
         }
         .create{
-            grid-column: 2/3;
+           grid-column:1/2;
             background-color: yellowgreen;
+            text-align:left;
+           
         }
         .five{
-            grid-column: 3/4;
+            
             background-color: aliceblue;
+            padding-top:35px;
+            padding-bottom:35px;
+            font-size:40px;
+            text-align:center;
+         
+        }
+        p3{
+            font-size:12px;
         }
         .post{
-            grid-column:4/4;
+            grid-column:3/3 ;
             background-color: aqua;
+            text-align:center;
         }
+       .schedule{
+        
+       }
         .ai{
-            grid-column: 2/3;
+           
             background-color: bisque;
         }
         .multiple{
-            grid-column:3/4;
+         
             background-color: aquamarine;
         }
         .growth{
-              grid-column: 5/2;
+            
         }
         .posting{
-            grid-column: ;
+          
+        }
+        .grow{
+           
         }
     </style>
     <body>
        <div class="start">
          <div class="create">
-            Create and schedule contents <p1> quicker </p1><br>
-            <img src="illustration-create-post.webp" width="100px" alt="create post" class="post">
+            Create and <br>schedule<br> contents<br> <p1> quicker </p1><br>
+            <br>
+            <img src="illustration-create-post.webp" width="150px" alt="create post" class="post">
                 </div>
                 <div class="five">
-                   Social Media <p2>10x</p2>faster with AI<br>
+                   Social Media <p2>10x</p2><br>faster with AI<br>
                   <img src="illustration-five-stars.webp" width="100px" alt="five stars" class="stars"><br>
                   <p3> Over 40,000 5-stars reviews </p3> 
                     </div>
                      <div class="post">
                          schedule to social media<br>
-                         <img src="illustration-schedule-posts.webp" width="100px" alt="schedule" class="schedule"><bR>
-                          Optimise post timings to publish content at perfect time for your audience 
+                         <img src="illustration-schedule-posts.webp" width="170px" height="200px" alt="schedule" class="schedule"><bR>
+                          Optimise post timings <br>to publish content at<br> perfect time for<br> your audience 
                           </div>
                           <div class="ai">
                            Write your content using AI<br>
