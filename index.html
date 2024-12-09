@@ -10,46 +10,52 @@
     <style>
         .start{
             display:grid;
-            
-            gap:10px 10px;
+            grid-template-columns: 100px 100px 100px 100px 100px 100px 100px ;
+            grid-template-rows:50px 50px 50px 50px 50px 50px 50px ;
+            grid-gap:1em;
+            justify-content: center;
+            margin-top: 3rem;
+            /* gap:10px 10px;
             font-family: "DM Sans", sans-serif;
             font-weight: 550;
             justify-content:center;
             align-items:center;
             font-size:18px;
-            margin:30px;    
+            margin:30px;     */
         }
         .create{
+            grid-column:1/3;
+            grid-row:1/6;
             background-color:antiquewhite;
-            width:200px;
-            height:350px; 
-            grid-column:1;
-            grid-row:1;
-            padding-top:50px;
+            
+            
+             /* padding-top:50px;  
             padding-left:20px;
-            font-size:25px;
+            font-size:25px; */
         }
         .five{
-             grid-row:1;
-             grid-column:2;
-            background-color: aliceblue;
-            padding-top:55px;
+           grid-row:1/5 ;
+           grid-column:3/7;
+           background-color: brown;
+             
+            /* background-color: aliceblue;
+            padding-top:35px;
             padding-bottom:;
             font-size:50px;
-            text-align:center;
-            width:500px;
-            height:230px;
+            text-align:center; */
+        
         }
         p3{
             font-size:12px;
         }
         .post{
-            grid-column:3/3 ;
+            grid-row:1/8;
+            grid-column:7 ;
+            width:205px;
             background-color: aqua;
             text-align:center;
             padding-top:30px;
-            width:200px;
-            padding-bottom:30px;
+            padding-bottom:0px;
             overflow: hidden;
         }
         p5{
@@ -59,23 +65,21 @@
             padding-left:89px;
        }
         .ai{
-            grid-row:2;
-            grid-column:1;
+            grid-row:6/20 ;
+            grid-column:1/3 ; 
+           
             padding-left:30px;
-            width:200px;
-            height:300px;
             padding-top:25px;
-            padding-bottom:25px;
+            padding-bottom:20px;
             background-color: bisque;
         }
         p6{
-            font-size:25px;
+            /* font-size:25px; */
         }
         .multiple{
-            grid-row:2/3;
-            grid-column:2;
-            width:170px;
-            height:150px;
+            grid-row:5/8 ;
+            grid-column:5/7 ;
+            
             padding-left:20px;
             padding-top:20px;
             padding-bottom:20px;
@@ -83,23 +87,21 @@
             overflow:hidden;
         }
         .platforms{
-            padding-left:65px;
+            /* padding-left:65px; */
         }
         .growth{
-            grid-row:3/2;
-            grid-column:;
-            width:170px;
-            height:150px;
+            grid-row:8/20;
+            grid-column:3/5;
+            
             background-color: brown;
             padding-left:19px;
             padding-top:19px;
             padding-bottom:19px;
         }
         .posting{
-            grid-row:2;
-            grid-column:3;
-            width:170px;
-            height:170px;
+            grid-row:5/8 ;
+            grid-column:3/5  ;
+            
           padding-left:20px;
           padding-top:20px;
           border-radius: ;
@@ -107,6 +109,8 @@
           overflow:hidden;
         }
         .grow{
+            grid-row:8/20 ;
+            grid-column:5/15 ;
            display:flex;
            flex-wrap:wrap;
            background-color: blueviolet;
@@ -115,57 +119,54 @@
            padding-bottom:18px;
         }
         p{
-            font-size:35px;
+            /* font-size:35px; */
         }
-        .collabo{
-            grid-row:1;
-            grid-column:2;
-        }
-        .two{
-            display:flex;
-        }
+    
     </style>
     <body>
        <div class="start">
-             <div class="create">
-                <p1> Create and <br> schedule<br> content<br> <a>quicker</a></p1><br><br>
-                <img src="illustration-create-post.webp" width="170px" alt="button">
-             </div>
+            
+                    <div class="create">
+                        <p1> Create and <br> schedule<br> content<br> <a>quicker</a></p1><br><br>
+                        <!-- <img src="illustration-create-post.webp" width="170px" alt="button"> -->
+                    </div>
                      <div class="post">
-                         <p4>schedule to <br>social media</p4><br><br>
-                         <img src="illustration-schedule-posts.webp" width="180px" height="200px" alt="schedule" class="schedule"><bR><br>
-                          <p5>Optimise post timings<br> to publish content at <br>perfect time for<br> your audience. </p5>
+                         <!-- <p4>schedule to <br>social media</p4><br><br> -->
+                         <!-- <img src="illustration-schedule-posts.webp" width="180px" height="200px" alt="schedule" class="schedule"><bR><br> -->
+                          <!-- <p5>Optimise post timings<br> to publish content at <br>perfect time for<br> your audience. </p5> -->
                           </div>
-                          <div class="collabo">
+                          
                           <div class="five">
-                            <p2> Social Media <p2>10x</p2><br>faster with AI</p2><br>
-                            <img src="illustration-five-stars.webp" width="150px" alt="five stars" class="stars"><br>
-                            <p3> Over 40,000 5-stars reviews </p3>
+                            <!-- <p2> Social Media <p2>10x</p2><br>faster with AI</p2><br> -->
+                            <!-- <img src="illustration-five-stars.webp" width="150px" alt="five stars" class="stars"><br> -->
+                            <!-- <p3> Over 40,000 5-stars reviews </p3> -->
                               </div>
-                              <div class="two">
-                    <div class="multiple">
-                    <img src="illustration-multiple-platforms.webp" width="150px" alt="platforms" class="platforms"><br>
-                    <p7> Manage <br>multiple<br> accounts and<br> platforms</p7><br>
-                    </div>&nbsp;
-                    <div class="posting">
-                        <p9> Maintain a<br> consistent<br> posting<br> schedule</p9> <br>
-                         <img src="illustration-consistent-schedule.webp" width="150px" alt="consistent" class="consistent">
-                      </div>
-                      </div>
-                    </div>
+                              
+                          <div class="multiple">
+                          <!-- <img src="illustration-multiple-platforms.webp" width="150px" alt="platforms" class="platforms"><br> -->
+                          <!-- <p7> Manage <br>multiple<br> accounts and<br> platforms</p7><br> -->
+                          </div>
+
+                          <div class="posting">
+                          <!-- <p9> Maintain a<br> consistent<br> posting<br> schedule</p9> <br> -->
+                          <!-- <img src="illustration-consistent-schedule.webp" width="150px" alt="consistent" class="consistent"> -->
+                          </div>
+                
                          <div class="growth"> 
-                        <p8>> 56%<br>
-                         faster audience growth </p8><br><br>
-                          <img src="illustration-audience-growth.webp" width="100px" alt="audience" class="audience">
-                    </div>
-                    <div class="ai">
-                        <p6> Write your<br> content <br>using AI</p6><br>
+                        <!-- <p8>> 56%<br> -->
+                         <!-- faster audience growth </p8><br><br> -->
+                          <!-- <img src="illustration-audience-growth.webp" width="100px" alt="audience" class="audience"> -->
+                        </div>
+
+                        <div class="ai">
+                        <!-- <p6> Write your<br> content <br>using AI</p6><br> -->
                         <br>
-                             <img src="illustration-ai-content.webp" width="170px" alt="content" class="content">
-                  </div>
-                <div class="grow">
-                    <img src="illustration-grow-followers.webp" width="190px" alt="followers" class="followers">&nbsp;
-                <p>Grow followers<br> with non-stop<br> content </p>
+                             <!-- <img src="illustration-ai-content.webp" width="160px" alt="content" class="content"> -->
+                        </div>
+
+                        <div class="grow">
+                    <!-- <img src="illustration-grow-followers.webp" width="190px" alt="followers" class="followers">&nbsp; -->
+                <!-- <p>Grow followers<br> with non-stop<br> content </p> -->
           </div>
        </div>
     </body>
